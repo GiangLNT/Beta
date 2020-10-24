@@ -362,7 +362,7 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 
-#hero h1 {
+#hero h3 {
   margin: 0 0 10px 0;
   font-size: 64px;
   font-weight: 700;
@@ -370,6 +370,40 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   color: #fff;
   text-shadow: -1px 0 2px #2f4d5a;
+  margin-bottom: 20px;
+}
+
+#hero h4 {
+  margin: 0 0 10px 0;
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 50px;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: -1px 0 2px #2f4d5a;
+  margin-bottom: 40px;
+}
+
+#hero h5 {
+  margin: 0 0 10px 0;
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 34px;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: -1px 0 2px #2f4d5a;
+  margin-bottom: 30px;
+}
+
+#hero h6 {
+  margin: 0 0 10px 0;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: -1px 0 2px #2f4d5a;
+  margin-bottom: 30px;
 }
 
 #hero h2 {
