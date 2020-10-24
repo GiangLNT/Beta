@@ -1,6 +1,6 @@
-Thanks for downloading this theme!
+Thanks for downloading this template!
 
-Theme Name: Squadfree
-Theme URL: https://bootstrapmade.com/squadfree-free-bootstrap-template-creative/
-Author: BootstrapMade
-Author URL: https://bootstrapmade.com
+Template Name: Mentor
+Template URL: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/
+Author: BootstrapMade.com
+License: https://bootstrapmade.com/license/
