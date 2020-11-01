@@ -30,6 +30,7 @@
     'username' => 'email.contact.form.2020@gmail.com',
     'password' => 'eodjhidhdyhbkllc',
     'port' => '587'
+    'encryption' => 'tls'
   );
   
 
