@@ -45,8 +45,10 @@
   $contact->short = 'is too short or empty!'; // If the length check number is set and the provided message text is under the set length in the add_message() method call
   $contact->ajax_error = 'Sorry, the request should be an Ajax POST'; // If ajax property is set true and the post method is not an AJAX call
   
+  /**
   if($_POST['privacy'] !='accept') {
   die('Please, accept our terms of service and privacy acy policy');}
+  */
 
   // $contact->recaptcha_secret_key = '6Leqw90ZAAAAACk7MAckvzplcaQp9KXM3Kw5WARD';
   echo $contact->send();
