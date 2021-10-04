@@ -7,7 +7,7 @@
   */
 
   // Replace contact@example.com with your real receiving email address
-  $receiving_email_address = 'admin@gciso.org';
+  $receiving_email_address = 'contact@example.com';
 
   if( file_exists($php_email_form = '../assets/vendor/php-email-form/php-email-form.php' )) {
     include( $php_email_form );
@@ -24,32 +24,18 @@
   $contact->subject = $_POST['subject'];
 
   // Uncomment below code if you want to use SMTP to send emails. You need to enter your correct SMTP credentials
-  
+  /*
   $contact->smtp = array(
-    'host' => 'smtp.gmail.com',
-    'username' => 'email.contact.form.2020@gmail.com',
-    'password' => 'eodjhidhdyhbkllc',
+    'host' => 'example.com',
+    'username' => 'example',
+    'password' => 'pass',
     'port' => '587'
-    'encryption' => 'tls'
   );
-  
+  */
 
   $contact->add_message( $_POST['name'], 'From');
   $contact->add_message( $_POST['email'], 'Email');
   $contact->add_message( $_POST['message'], 'Message', 10);
 
-  $contact->invalid_to_email = 'Email to (receiving email address) is empty or invalid!';
-  $contact->invalid_from_name = 'From Name is empty!';
-  $contact->invalid_from_email = 'Email from: is empty or invalid!';
-  $contact->invalid_subject = 'Subject is too short or empty!';
-  $contact->short = 'is too short or empty!'; // If the length check number is set and the provided message text is under the set length in the add_message() method call
-  $contact->ajax_error = 'Sorry, the request should be an Ajax POST'; // If ajax property is set true and the post method is not an AJAX call
-  
-  /**
-  if($_POST['privacy'] !='accept') {
-  die('Please, accept our terms of service and privacy acy policy');}
-  */
-
-  // $contact->recaptcha_secret_key = '6Leqw90ZAAAAACk7MAckvzplcaQp9KXM3Kw5WARD';
   echo $contact->send();
 ?>
